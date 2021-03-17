@@ -14,10 +14,12 @@ var endTimer = document.getElementById("end-timer");
 var trace = document.getElementById("trace");
 var globalError = document.getElementById("global-error");
 
-logDemo.onclick = function() {
+logDemo.onclick = function(hold) {
+    hold.preventDefault();
     console.log('Console Log Demo');
 }
 
-errorDemo.onclick = function() {
+errorDemo.onclick = function(hold) {
+    hold.preventDefault();
     console.error('Console Error Demo');
 }
