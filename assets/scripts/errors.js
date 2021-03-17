@@ -138,3 +138,17 @@ try {
 } finally {
     throw new Error("Things happen o_O");
 }
+
+/* The Global Error handler and 3rd Party Tracking
+fetch('https://truotere.github.io/makeup_lab/')
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+    }
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
+*/
